@@ -26,6 +26,7 @@ if(h<100){
     console.log(h);
 }else{
     h--;
+    console.log(h);
 }
 
 
@@ -52,3 +53,16 @@ while(j<10){
     d++
 }
 
+
+// L'oggetto document
+// Ci sono oggetti già creati che il linguaggio mette a nostra disposizione.
+// Essendo javascript un linguaggio di scripting per creare dinamicità all'interno della pagina HTML
+// abbiamo bisogno di un modo per accedere al documento HTML stesso.
+// Utilizzando l'oggetto document abbiamo acesso al contenuto, sottoforma di dato, della pagina.
+// Oltre all'oggetto stesso abbiamo a disposizione dei metodi di document che possiamo utilizzare
+
+document.getElementById('mioId'); // Utilizzando come riferimento l'ID del tag posso riferirmi ad esso con un metodo GET
+document.getElementsByClassName('container')// Prendo elementI dall'HTML usando come riferimento la classe
+document.getElementsByTagName('body')// Usando il nome del tag
+document.querySelector('body')// Prendo il PRIMO elemento HTML CON QUEL SELETTORE!
+document.querySelectorAll('div')// Prendo TUTTI gli elementi con quel SELETTORE!
